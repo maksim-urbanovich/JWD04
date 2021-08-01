@@ -119,9 +119,12 @@ public class Calculator {
     public static double div(double a, double b) {
         double res = 0;
         if (b == 0) {
-            throw new ArithmeticException("Division by zero");
+            System.out.println("Division by zero");
         }
-        res = a / b;
+        else {
+            res = a / b;
+        }
+
         return  res;
     }
 
